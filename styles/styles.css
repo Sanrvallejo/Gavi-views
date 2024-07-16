@@ -1,0 +1,100 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 8px;
+  left: 5px;
+  bottom: 5px;
+  width: 250px;
+  background: linear-gradient(180deg, #0df60d, #00cc00, #009900, #006600);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.main-logo {
+  width: auto;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.menu-item {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item .material-symbols-rounded {
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-footer {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.secundary-logo {
+  width: 25%;
+  height: auto;
+}
+
+.menu-footer p {
+  font-size: 10px;
+}
+
+.nav-bar {
+  margin-left: 275px;
+  margin-right: 5px;
+  margin-top: 3px;
+  background: linear-gradient(to right, #0df60d, #00cc00);
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-bar h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.nav-icons .material-symbols-rounded {
+  margin-left: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icons .material-symbols-rounded:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*fragmento*/
