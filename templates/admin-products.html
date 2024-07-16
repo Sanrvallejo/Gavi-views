@@ -82,5 +82,82 @@
   <div class="section-title">
     <h2>Nueva venta</h2>
   </div>
+  <div class="sale-form">
+    <div class="left-section">
+
+      <div class="form-row">
+        <div class="row-content">
+          <label for="seller">Vendedor</label>
+          <input type="text" id="seller" placeholder="Nombre del vendedor">
+        </div>
+        <div class="row-content">
+          <label for="bill">Factura</label>
+          <input type="text" id="bill" placeholder="Código de factura">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <h3>Datos del cliente</h3>
+        <div class="row-content">
+          <label for="customer">Nombre</label>
+          <input type="text" id="customer" placeholder="Nombre del cliente">
+        </div>
+        <div class="row-content">
+          <label for="document">Documento</label>
+          <input type="text" id="document" placeholder="123456789">
+        </div>
+        <div class="row-content">
+          <label for="address">Dirección</label>
+          <input type="text" id="address" placeholder="Cl 12 #34-45">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <h3>Datos del producto</h3>
+        <div class="row-content">
+          <label for="code">Código</label>
+          <input type="text" id="code" placeholder="Buscar por código del producto">
+        </div>
+        <div class="row-content">
+          <label for="product">Nombre del producto</label>
+          <input type="text" id="product" placeholder="Buscar por nombre">
+        </div>
+        <div class="row-content">
+          <label for="price">Valor unitario</label>
+          <input type="number" id="price">
+        </div>
+        <div class="row-content">
+          <label for="amount">Cantidad</label>
+          <input type="number" id="amount">
+        </div>
+      </div>
+      
+      <div class="form-buttons">
+        <button class="form-button green-button">
+          <span class="material-symbols-rounded">payments</span>
+          <span>Pagar en efectivo</span>
+        </button>
+        <button class="form-button green-button">
+          <span class="material-symbols-rounded">credit_card</span>
+          <span>Tarjeta débito/crédito</span>
+        </button>
+        <button class="form-button green-button">
+          <span class="material-symbols-rounded">checkbook</span>
+          <span>Crédito</span>
+        </button>
+        <button class="form-button blue-button">
+          <span class="material-symbols-rounded">aod_tablet</span>
+          <span>Factura electrónica</span>
+        </button>
+        <button class="form-button red-button">
+          <span class="material-symbols-rounded">cancel</span>
+          <span>Cancelar venta</span>
+        </button>
+      </div>
+    </div>
+    <div class="right-section">
+
+    </div>
+  </div>
 </body>
 </html>
