@@ -1,0 +1,247 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 8px;
+  left: 5px;
+  bottom: 5px;
+  width: 250px;
+  background: linear-gradient(180deg, #0df60d, #00cc00, #009900, #006600);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.main-logo {
+  width: auto;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  align-self: flex-start;
+}
+
+.menu-options {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.menu-item {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item .material-symbols-rounded {
+  margin-right: 10px;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-footer {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.secundary-logo {
+  width: 25%;
+  height: auto;
+}
+
+.menu-footer p {
+  font-size: 10px;
+}
+
+.nav-bar {
+  margin-left: 275px;
+  margin-right: 5px;
+  margin-top: 3px;
+  background: linear-gradient(to right, #0df60d, #00cc00);
+  border-radius: 10px;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-bar h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.nav-icons .material-symbols-rounded {
+  margin-left: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icons .material-symbols-rounded:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*fragmento*/
+
+.btn-section {
+  margin-left: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.custom-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95px;
+  height: 100px;
+  border: 2px solid;
+  border-radius: 8px;
+  background: none;
+  color: #076007;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3 ease, color 0.3 ease;
+}
+
+.custom-button .material-symbols-rounded {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.custom-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dividing-line {
+  margin-left: 280px;
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 1px;
+  background-color: #a8a8a8;
+}
+
+.section-title {
+  margin-left: 275px;
+  width: 100%;
+  padding: 10px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: rgb(126, 126, 126);
+  font-size: 14px;
+}
+
+.sale-form {
+  display: flex;
+  margin-top: 5px;
+  gap: 20px;
+  margin-left: 275px;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #a8a8a8;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.form-row h3 {
+  width: 100%;
+  color: #365336;
+  font-size: 14px;
+}
+
+.form-row label {
+  display: flex;
+  margin-bottom: 3px;
+  color: #333;
+  font-size: 12px;
+}
+
+.form-row input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#product {
+  width: 29vw;
+}
+
+#code,
+#price,
+#amount {
+  width: 5vw;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 105px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.green-button {
+  background: linear-gradient(180deg, #00cc00, #009900);
+}
+
+.blue-button {
+  background: linear-gradient(180deg, #0db8d6, #1388b2);
+}
+.red-button {
+  background: linear-gradient(180deg, #ec5555, #b82c2c);
+}
+
+.form-button .material-symbols-rounded {
+  font-size: 40px;
+}
