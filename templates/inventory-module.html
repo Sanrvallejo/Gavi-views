@@ -58,27 +58,72 @@
 
   <div class="btn-section">
     <button class="custom-button">
-      <span class="material-symbols-rounded">attach_money</span>
-      <span>Realizar una venta</span>
-    </button>
-    <button class="custom-button">
-      <span class="material-symbols-rounded">order_approve</span>
-      <span>Relizar cotizaciones</span>
-    </button>
-    <button class="custom-button">
-      <span class="material-symbols-rounded">date_range</span>
-      <span>Historial de ventas</span>
-    </button>
-    <button class="custom-button">
-      <span class="material-symbols-rounded">receipt</span>
-      <span>Detalle de venta</span>
-    </button>
-    <button class="custom-button">
-      <span class="material-symbols-rounded">aod_tablet</span>
-      <span>POS a factura electrónica</span>
-    </button>
+      <span class="material-symbols-rounded">assignment_add</span>
+      <span>Ingresar pedido</span>
+      <button class="custom-button">
+        <span class="material-symbols-rounded">package_2</span>
+        <span>Crear producto</span>
   </div>
+
   <div class="dividing-line"></div>
+
+  <div class="section-title">
+    <h2>Lista de productos</h2>
+  </div>
+
+  <div class="products-list">
+    <table class="products-table">
+      <thead>
+        <tr>
+          <th class="code-th">Código</th>
+          <th class="name-th">Nombre</th>
+          <th class="cat-th">Categoría</th>
+          <th class="price-th">Precio</th>
+          <th class="pre-th">Presentación</th>
+          <th class="amn-th">Existencias</th>
+          <th class="actions-th">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MNV-CP-0078</td>
+          <td>Arroz roa premium</td>
+          <td>Comida</td>
+          <td>$ 3900</td>
+          <td>libra</td>
+          <td>15</td>
+          <td>
+            <div class="act-buttons">
+              <button class="modify-button">
+                <span class="material-symbols-rounded">edit_square</span>
+              </button>
+              <button class="remove-button">
+                <span class="material-symbols-rounded">cancel</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>MNV-CP-0079</td>
+          <td>Arroz roa sencillo</td>
+          <td>Comida</td>
+          <td>$ 2500</td>
+          <td>libra</td>
+          <td>15</td>
+          <td>
+            <div class="act-buttons">
+              <button class="modify-button">
+                <span class="material-symbols-rounded">edit_square</span>
+              </button>
+              <button class="remove-button">
+                <span class="material-symbols-rounded">cancel</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <script src="../scripts/script.js"></script>
 </body>
