@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/sales-styles.css">
+  <link rel="stylesheet" href="/Front/styles/sales-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="menu-container">
-    <img src="../images/main_logo_menu.png" alt="main logo" class="main-logo">
+    <img src="/images/main_logo_menu.png" alt="main logo" class="main-logo">
     <ul class="menu-options">
       <li class="menu-item"><span class="material-symbols-rounded">
         manage_accounts
@@ -25,7 +25,7 @@
         </span>Mis tiendas</li>
       <li class="menu-item"><span class="material-symbols-rounded">
         inventory
-      </span><a href="./inventory-module.html">Inventario</a></li>
+      </span><a href="../inventory/inventory-module.html">Inventario</a></li>
       <li class="menu-item"><span class="material-symbols-rounded">
         currency_exchange
       </span><a href="./sales-module.html">Ventas</a></li>
@@ -43,7 +43,7 @@
         </span>Configuración</li>
     </ul>
     <div class="menu-footer">
-      <img src="../images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
+      <img src="/images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
       <p>Todos los derechos reservados a Lancer Soft.</p>
     </div>
   </div>
@@ -87,8 +87,12 @@
 
       <div class="form-row">
         <div class="row-content">
-          <label for="seller">Vendedor</label>
-          <input type="text" id="seller" placeholder="Nombre del vendedor">
+          <label for="seller">Nombre vendedor</label>
+          <input type="text" id="seller">
+        </div>
+        <div class="row-content">
+          <label for="seller">Código vendedor</label>
+          <input type="text" id="seller">
         </div>
         <div class="row-content">
           <label for="bill">Factura</label>
@@ -100,22 +104,22 @@
         <h3>Datos del cliente</h3>
         <div class="row-content">
           <label for="customer">Nombre</label>
-          <input type="text" id="customer" placeholder="Nombre del cliente">
+          <input type="text" id="customer">
         </div>
         <div class="row-content">
           <label for="document">Documento</label>
-          <input type="text" id="document" placeholder="123456789">
+          <input type="text" id="document">
         </div>
         <div class="row-content">
           <label for="address">Dirección</label>
-          <input type="text" id="address" placeholder="Cl 12 #34-45">
+          <input type="text" id="address">
         </div>
       </div>
 
       <div class="form-row">
         <h3>Datos del producto</h3>
         <div class="row-content">
-          <label for="code">Código</label>
+          <label for="code">Código producto</label>
           <input type="text" id="code" placeholder="Buscar por código del producto">
         </div>
         <div class="row-content">
@@ -228,6 +232,6 @@
     </div>
   </div>
 
-  <script src="../scripts/script.js"></script>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
