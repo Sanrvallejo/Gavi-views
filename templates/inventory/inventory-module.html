@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/inventory-styles.css">
+  <link rel="stylesheet" href="/Front/styles/inventory-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="menu-container">
-    <img src="../images/main_logo_menu.png" alt="main logo" class="main-logo">
+    <img src="/Front/images/main_logo_menu.png" alt="main logo" class="main-logo">
     <ul class="menu-options">
       <li class="menu-item"><span class="material-symbols-rounded">
         manage_accounts
@@ -28,7 +28,7 @@
       </span><a href="./inventory-module.html">Inventario</a></li>
       <li class="menu-item"><span class="material-symbols-rounded">
         currency_exchange
-      </span><a href="./sales-module.html">Ventas</a></li>
+      </span><a href="../sales/sales-module.html">Ventas</a></li>
       <li class="menu-item"><span class="material-symbols-rounded">
         sync_alt
         </span>Devoluciones</li>
@@ -43,7 +43,7 @@
         </span>Configuración</li>
     </ul>
     <div class="menu-footer">
-      <img src="../images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
+      <img src="/images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
       <p>Todos los derechos reservados a Lancer Soft.</p>
     </div>
   </div>
@@ -60,9 +60,98 @@
     <button class="custom-button">
       <span class="material-symbols-rounded">assignment_add</span>
       <span>Ingresar pedido</span>
-      <button class="custom-button">
-        <span class="material-symbols-rounded">package_2</span>
-        <span>Crear producto</span>
+    </button>
+
+    <button class="custom-button">
+      <span class="material-symbols-rounded">package_2</span>
+      <span>Crear producto</span>
+    </button>
+  </div>
+
+  <div class="modal-container">
+    <div class="modal modal-close">
+      <p class="close">X</p>
+
+      <h2>Ingresar productos</h2>
+
+      <div class="modal-inputs">
+        <div class="modal-info">
+          <div class="input-group">
+            <label for="bill-code">Código factura</label>
+            <input type="text" id="bill-code" required>
+          </div>
+          <div class="input-group">
+            <label for="supplier">Proveedor</label>
+            <select name="supplier" id="supplier">
+              <option value="Proveedor1">Proveedor 1</option>
+              <option value="Proveedor2">Proveedor 2</option>
+              <option value="Proveedor3">Proveedor 3</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" required>
+          </div>
+          <div class="input-group">
+            <label for="product-code">Código producto</label>
+            <input type="text" id="product-code" placeholder="Buscar producto por código">
+          </div>
+          <div class="input-group">
+            <label for="product-name">Nombre producto</label>
+            <input type="text" id="product-name" placeholder="Buscar producto por nombre">
+          </div>
+        </div>
+        <div class="modal-product">
+          <div class="input-group">
+            <label for="cost">Costo producto</label>
+            <input type="number" id="cost">
+          </div>
+          <div class="input-group">
+            <label for="iva">Iva</label>
+            <input type="number" id="iva">
+          </div>
+          <div class="input-group">
+            <label for="amount">Cantidad</label>
+            <input type="number" id="amount">
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-table">
+        <table class="products-table-modal">
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Costo</th>
+            <th>Iva</th>
+            <th>Cantidad</th>
+            <th>Precio unitario</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>MNV-CP-0078</td>
+            <td>Arroz roa premium</td>
+            <td>$ 3900</td>
+            <td>19%</td>
+            <td>6</td>
+            <td>$ 4641</td>
+            <td>$ 27.846</td>
+          </tr>
+          <tr>
+            <td>MNV-CP-0078</td>
+            <td>Arroz roa premium</td>
+            <td>$ 3900</td>
+            <td>19%</td>
+            <td>6</td>
+            <td>$ 4641</td>
+            <td>$ 27.846</td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal-values"></div>
+    </div>
+  </div>
+
   </div>
 
   <div class="dividing-line"></div>
@@ -125,6 +214,6 @@
     </table>
   </div>
 
-  <script src="../scripts/script.js"></script>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>

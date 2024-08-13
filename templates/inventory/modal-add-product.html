@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Add product</title>
+  <link rel="stylesheet" href="/styles/add-product-modall.css">
+</head>
+
+<body>
+
+  <dialog id="addProductModal" class="add-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div class="modal-header">
+        <h2>Ingresar pedido</h2>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-column">
+          <h3>Información de la factura</h3>
+
+          <div class="form-group">
+            <label for="fechaCompra">Fecha de compra:</label>
+            <input type="date" id="fechaCompra" name="fechaCompra" required>
+          </div>
+          <div class="form-group">
+            <label for="numeroFactura">N° Factura</label>
+            <input type="text" id="numeroFactura" name="numeroFactura" required>
+          </div>
+          <div class="form-group">
+            <label for="proveedor">Proveedor</label>
+            <select name="proveedir" id="proveedor">
+              <option value="proveedor">Proveedor</option>
+              <option value="proveedor">Proveedor</option>
+              <option value="proveedor">Proveedor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="codigoProducto">Codigo del producto</label>
+            <input type="text" id="codigoProducto" name="codigoProducto" placeholder="Buscar producto pot código"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="nombreProducto">Nombre del producto</label>
+            <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Buscar producto por nombre"
+              required>
+          </div>
+        </div>
+
+        <div class="form-column">
+          <h3>Producto comprado</h3>
+
+          <div class="form-group">
+            <label for="costoProducto">Costo del producto</label>
+            <input type="number" id="costoProducto" name="costoProducto" required>
+          </div>
+          <div class="form-group">
+            <label for="iva">Iva del producto</label>
+            <input type="number" id="iva" name="iva" required>
+          </div>
+          <div class="form-group">
+            <label for="cantidad">Cantidad comprada</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+
+</html>
