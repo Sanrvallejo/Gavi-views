@@ -152,7 +152,7 @@ body {
 }
 
 .modal {
-  width: 75%;
+  width: 60%;
   height: 80vh;
   padding: 20px;
   background-color: white;
@@ -215,7 +215,7 @@ body {
 
 .modal-table {
   width: 70%;
-  height: 350px;
+  height: 400px;
   font-size: 12px;
 }
 
@@ -239,6 +239,54 @@ body {
   padding: 5px;
 }
 
+.modal-values {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btn-modal {
+  display: flex;
+  justify-content: left;
+  border: 1px solid #ccc;
+  gap: 10px
+}
+
+.btn-values {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 90px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.green-button {
+  background: linear-gradient(180deg, #00cc00, #009900);
+}
+
+.blue-button {
+  background: linear-gradient(180deg, #0db8d6, #1388b2);
+}
+.red-button {
+  background: linear-gradient(180deg, #ec5555, #b82c2c);
+}
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.values-group label {
+  font-weight: bold;
+}
 
 .dividing-line {
   margin-left: 280px;

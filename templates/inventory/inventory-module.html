@@ -43,7 +43,7 @@
         </span>Configuración</li>
     </ul>
     <div class="menu-footer">
-      <img src="/images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
+      <img src="/Front/images/main_logo_menu.png" alt="secundary logo" class="secundary-logo">
       <p>Todos los derechos reservados a Lancer Soft.</p>
     </div>
   </div>
@@ -111,6 +111,10 @@
             <input type="number" id="iva">
           </div>
           <div class="input-group">
+            <label for="product-price">Precio producto</label>
+            <input type="number" id="product-price">
+          </div>
+          <div class="input-group">
             <label for="amount">Cantidad</label>
             <input type="number" id="amount">
           </div>
@@ -148,7 +152,36 @@
           </tr>
         </table>
       </div>
-      <div class="modal-values"></div>
+      <div class="modal-values">
+        <div class="btn-modal">
+          <button class="btn-values green-button">
+            <span class="material-symbols-rounded">check</span>
+            <span>Confirmar pedido</span>
+          </button>
+          <button class="btn-values blue-button">
+            <span class="material-symbols-rounded">package_2</span>
+            <span>Crear producto</span>
+          </button>
+          <button class="btn-values red-button">
+            <span class="material-symbols-rounded">close</span>
+            <span>Cancelar</span>
+          </button>
+        </div>
+        <div class="values">
+          <div class="values-group">
+            <label for="subtotal">Subtotal: </label>
+            <span id="subtotal">$ 27.846</span>
+          </div>
+          <div class="values-group">
+            <label for="iva">Iva: </label>
+            <span id="iva">$ 27.846</span>
+          </div>
+          <div class="values-group">
+            <label for="total">Total: </label>
+            <span id="total">$ 27.846</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
