@@ -139,6 +139,8 @@ body {
 }
 
 .modal-container {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -152,7 +154,7 @@ body {
 }
 
 .modal {
-  width: 75%;
+  width: 60%;
   height: 80vh;
   padding: 20px;
   background-color: white;
@@ -162,9 +164,31 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  transition: transform 1s;
+  transform: translateY(0%);
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: #c44a4a;
+  color: white;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.modal-close {
+  transform: translateY(-200%);
 }
 
 .modal h2 {
+  margin-top: 5px;
   margin-bottom: 10px;
   color: #009900;
   font-size: 20px;
@@ -194,7 +218,7 @@ body {
 .input-group {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .input-group label {
@@ -215,13 +239,16 @@ body {
 
 .modal-table {
   width: 70%;
-  height: 350px;
+  height: 500px;
   font-size: 12px;
+  margin-bottom: 10px;
+  overflow: auto;
 }
 
 .modal-table table {
   width: 100%;
   border-collapse: collapse;
+  overflow: auto;
 }
 
 .products-table-modal td {
@@ -235,10 +262,65 @@ body {
 .products-table-modal th {
   padding: 10px;
 }
+
+.products-table-modal thead th {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+
 .products-table-modal td {
   padding: 5px;
 }
 
+.modal-values {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btn-modal {
+  display: flex;
+  justify-content: left;
+  gap: 10px
+}
+
+.btn-values {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  height: 90px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.green-button {
+  background: linear-gradient(180deg, #00cc00, #009900);
+}
+
+.blue-button {
+  background: linear-gradient(180deg, #0db8d6, #1388b2);
+}
+.red-button {
+  background: linear-gradient(180deg, #ec5555, #b82c2c);
+}
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.values-group label {
+  font-weight: bold;
+}
 
 .dividing-line {
   margin-left: 280px;
