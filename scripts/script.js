@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let modal = document.querySelectorAll('.modal')[0];
   let modalContainer = document.querySelectorAll('.modal-container')[0];
 
-  open.addEventListener('click', (e) => {
-    e.preventDefault();
+  open.addEventListener('click', () => {
     modalContainer.style.opacity = "1";
     modalContainer.style.visibility = "visible";
     modal.classList.toggle('modal-close');
@@ -27,5 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
       modalContainer.style.visibility = "hidden";
     }, 750)
   });
+
+  window.addEventListener('click', (e) => {
+    if (e.target == modalContainer) {
+      console.log(e.target);
+      
+      modal.classList.toggle('modal-close');
+      setTimeout(() => {
+        modalContainer.style.opacity = "0";
+        modalContainer.style.visibility = "hidden";
+      }, 750)
+    }
+  })
 
 });
